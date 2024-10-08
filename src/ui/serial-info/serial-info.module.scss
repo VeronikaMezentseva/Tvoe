@@ -1,0 +1,30 @@
+.serials-info-container {
+  color: #FFFFFF;
+  // padding-top: 325px;
+  // margin: 0px 64px 24px 64px;
+  font-size: 20px;
+}
+
+.serials-info__title {
+  display: block;
+  height: 101px;
+  font-size: 38px;
+  // text-align: center;
+}
+
+.serials-info__tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.serials-info__dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+

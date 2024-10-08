@@ -1,0 +1,11 @@
+.series-cover {
+  padding: 325px 64px 24px 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (width < 500px) {
+  .series-cover {
+    padding: 203px 18px 12px 18px;
+  }
+}

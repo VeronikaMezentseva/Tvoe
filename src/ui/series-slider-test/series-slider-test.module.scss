@@ -1,0 +1,39 @@
+.slider {
+  display: flex;
+  gap: 16px;
+}
+
+.slider-container {
+  position: relative;
+  width: 125%;
+  overflow: hidden;
+}
+
+.image-container:last-child {
+  display: block;
+  max-width: 256px;
+  max-height: 144px;
+  border-radius: 16px;
+}
+
+.slider-container {
+  :global .slick-current::after {
+    content: '';
+    display: block;
+    width: 177px;
+    height: 4px;
+    background: linear-gradient(45deg, #F2F452 0%, #B4FD64 64%);
+    border-radius: 7px;
+    margin-top: 4px;
+  }
+}
+
+@media (width < 500px) {
+  .slider-container {
+    width: 135%;
+    :global .slick-current::after {
+      width: 78px;
+      height: 3px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.image-container:last-child {
+  display: block;
+  max-width: 256px;
+  max-height: 144px;
+  min-height: 144px;
+  border-radius: 16px;
+}
+
+@media (width < 500px) {
+  .image-container:last-child {
+    max-width: 107px;
+    max-height: 61px;
+    min-height: 61px;
+    border-radius: 6px;
+  }
+}
