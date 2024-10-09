@@ -28,3 +28,15 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+@media (width < 600px) {
+  .logo-image {
+    max-width: 176px;
+    max-height: 54px;
+  }
+
+  .serials-info__title {
+    display: block;
+    max-height: 54px;
+    font-size: 26px;
+  }
+}

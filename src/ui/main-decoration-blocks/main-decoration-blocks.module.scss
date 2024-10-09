@@ -1,0 +1,36 @@
+.decorate {
+  position: absolute;
+  top: -20%;
+  right: 40%;
+}
+
+.decorate-container {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row-block {
+  position: absolute;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.row-block-second {
+  left: calc(-279px / 2);
+  top: calc(165px + 20px);
+}
+
+.row-block-third {
+  left: -279px;
+  top: calc((165px * 2) + (20px * 2));
+}
+
+.image {
+  display: block;
+  width: 279px;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 5.36px;
+}

@@ -2,8 +2,6 @@
 
 import { FC, useState } from "react";
 import { SerialInfo } from "../serial-info/SerialInfo";
-import { SeriesSlider } from "../series-slider/SeriesSlider";
-import styles from "./trailer.module.scss";
 import { TInfoSeriesFakeData, infoSeriesFakeData } from "@/fake-data/info-series/info-series";
 import FocusOnSelect from "../series-slider-test/SeriesSliderTest";
 import React from "react";

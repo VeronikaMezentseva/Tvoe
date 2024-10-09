@@ -32,9 +32,7 @@ const FocusOnSelect: FC<{onClick: (evt: any, someData: TInfoSeriesFakeData) => v
       settings: {
         slidesToShow: 4,
         slidesToScroll: 1,
-        infinite: true,
-        // centerMode: true,
-        // centerPadding: '20%'
+        infinite: true
       }
     },
     {

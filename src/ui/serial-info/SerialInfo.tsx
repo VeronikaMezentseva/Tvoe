@@ -9,7 +9,7 @@ export const SerialInfo: FC<{ data: TInfoSeriesFakeData }> = ({ data }) => {
     <div className={styles["serials-info-container"]}>
       <div>
         {data.filmLogo ? (
-          <img src={data.filmLogo.src} alt={data.name} />
+          <img className={styles["logo-image"]} src={data.filmLogo.src} alt={data.name} />
         ) : (
           <h2 className={styles["serials-info__title"]}>{data.name}</h2>
         )}
