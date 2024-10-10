@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { HeaderUI } from "@/ui/header/HeaderUI";
+import { Footer } from "@/ui/footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,7 +25,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
     <html lang="ru">
       <body
@@ -32,6 +32,7 @@ export default function RootLayout({
       >
         <HeaderUI></HeaderUI>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

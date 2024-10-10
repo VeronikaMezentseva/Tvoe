@@ -1,0 +1,91 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 52px 64px 80px 64px;
+  width: 75%;
+  gap: 44px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 24px;
+}
+
+.button {
+  display: flex;
+  color: rgba(255, 255, 255, 0.3);
+  background: transparent;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 20.48px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navigation-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #FFFFFF;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 20px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.48px;
+}
+
+.navigation-list > li:last-child {
+  margin-left: 54px;
+}
+
+.navigation-tech-list {
+  display: flex;
+  gap: 20px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.48px;
+}
+
+.company-info-block {
+  display: flex;
+  gap: 300px;
+}
+
+.age-rate-label {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.48px;
+}
+
+.company-info-rights {
+  display: flex;
+  gap: 20px;
+}
+
+.company-info-paragraphs {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.48px;
+}
+
+.logo {
+  opacity: .3;
+}
