@@ -39,6 +39,32 @@ const WeeklyTopSlider: FC = () => {
     slidesToScroll: 1,
     nextArrow: <NextArrow></NextArrow>,
     prevArrow: <PrevArrow></PrevArrow>,
+    responsive: [
+      {
+      breakpoint: 1865,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 1520,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 1170,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }
+  ]
   };
   return (
     <div className={styles["slider-container"]}>

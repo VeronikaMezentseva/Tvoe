@@ -37,6 +37,48 @@ const MultipleItems: FC = () => {
     slidesToScroll: 1,
     nextArrow: <NextArrow></NextArrow>,
     prevArrow: <PrevArrow></PrevArrow>,
+    adaptiveHeight: true,
+    responsive: [{
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+  ]
   };
   return (
     <div className={styles["slider-container"]}>

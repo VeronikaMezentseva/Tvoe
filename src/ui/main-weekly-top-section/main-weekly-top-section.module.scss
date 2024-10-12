@@ -15,3 +15,15 @@
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
 }
+
+@media (width <= 600px) {
+  .weekly-top-section {
+    margin-bottom: 60px;
+  }  
+
+  .title {
+    font-size: 22px;
+    line-height: 28.16px;
+    margin-bottom: 12px;
+  }
+}

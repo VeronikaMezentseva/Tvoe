@@ -1,30 +1,31 @@
 .decorate {
-  position: absolute;
-  top: -20%;
-  right: 40%;
+  // position: relative;
 }
 
 .decorate-container {
-  position: relative;
-  display: inline-flex;
+  position: absolute;
+  top: -20%;
+  left: 60%;
+  display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .row-block {
-  position: absolute;
-  display: inline-flex;
+  display: flex;
   gap: 20px;
 }
 
 .row-block-second {
-  left: calc(-279px / 2);
-  top: calc(165px + 20px);
+  margin-left: calc(-279px / 2);
+  // margin-top: calc(165px + 20px);
+  // left: calc(-279px / 2);
+  // top: calc(165px + 20px);
 }
 
 .row-block-third {
-  left: -279px;
-  top: calc((165px * 2) + (20px * 2));
+  margin-left: -279px;
+  // top: calc((165px * 2) + (20px * 2));
 }
 
 .image {
@@ -33,4 +34,54 @@
   height: 165px;
   object-fit: cover;
   border-radius: 5.36px;
+}
+
+@media (width <= 1670px) {
+
+  .decorate-container {
+    top: 10%;
+    left: 80%;
+    gap: 12px;
+  }
+
+  .row-block {
+    gap: 12px;
+  }
+
+  .image {
+    display: block;
+    width: 160px;
+    height: 94px;
+    object-fit: cover;
+    border-radius: 5.36px;
+  }
+}
+
+@media (width <= 1350px) {
+
+  .decorate-container {
+    top: 70%;
+    left: 35%;
+    gap: 12px;
+  }
+
+  .row-block {
+    gap: 12px;
+  }
+
+  .image {
+    display: block;
+    width: 160px;
+    height: 94px;
+    object-fit: cover;
+    border-radius: 5.36px;
+  }
+}
+
+@media (width <= 500px) {
+
+  .decorate-container {
+    top: 75%;
+    left: -10%;
+  }
 }

@@ -28,6 +28,18 @@
   background-repeat: no-repeat;
 }
 
+@media (width <= 400px) {
+  .slider-container {
+    :global .slick-active {
+      width: 224px !important;
+    }
+
+    :global .slick-track {
+      width: 4500px !important;
+    }
+  }
+}
+
 // ---------- стили для кнопки слайдера "назад" ----------
 // ---------- раскомментировать, если она понадобится ----------
 

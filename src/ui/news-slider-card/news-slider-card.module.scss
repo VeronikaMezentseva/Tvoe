@@ -1,9 +1,8 @@
 .card {
-
+  
 }
 
 .image-container {
-  // position: relative;
   max-width: 280px;
   height: 425px;
   margin-bottom: 12px;
@@ -64,4 +63,40 @@
   color: rgba(186, 186, 186, 1);
   font-size: 18px;
   line-height: 23.04px;
+}
+
+@media (width < 1000px) {
+
+  .image-container {
+    max-width: 168px;
+    height: 252px;
+    margin-bottom: 8px;
+  }
+
+  .rate-label {
+    padding: 4px 7px;
+    font-size: 12px;
+    line-height: 15.36px;
+    top: 8px;
+    left: 8px;
+  }
+
+  .new-label {
+    top: 8px;
+    padding: 4px 7px 4px 7px;
+    line-height: 15.36px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .card-title {
+    width: 168px;
+    font-size: 14px;
+    line-height: 17.92px;
+  }
+
+  .card-paragraph {
+    font-size: 14px;
+    line-height: 17.92px;
+  }
 }

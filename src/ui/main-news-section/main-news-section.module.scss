@@ -7,3 +7,15 @@
   line-height: 30.72px;
   margin-bottom: 19px;
 }
+
+@media (width < 600px) {
+  .news-section {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 25.6px;
+    margin-bottom: 14px;
+  }
+}

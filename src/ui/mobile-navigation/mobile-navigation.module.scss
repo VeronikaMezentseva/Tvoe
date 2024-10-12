@@ -1,0 +1,41 @@
+.navigation {
+  order: 4;
+  border: 0.79px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  padding: 0px 16px;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 12px;
+}
+
+.navigation-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+}
+
+.menu__active-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 2px;
+  width: 68.75px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, #F2F452 0%, #B4FD64 64%);
+}
+
+.paragraph {
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 12.8px;
+  font-weight: 500;
+  text-align: center;
+}

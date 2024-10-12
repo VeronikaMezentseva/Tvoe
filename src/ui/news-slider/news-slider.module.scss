@@ -9,7 +9,6 @@
   top: 50%;
   transform: translate(0, -50%);
   right: calc(15% - 65px);
-  display: block;
   width: 44px;
   height: 60px;
   background-color: rgba(9, 9, 12, 0.6);
@@ -26,6 +25,24 @@
   background-image: url('../../images/arrowNext.png');
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (width < 500px) {
+  .slider-container {
+    :global .slick-active {
+      width: 174px !important;
+    }
+  }
+
+  .slider-container {
+    width: 100%;
+  }
+
+  .slider-next-arrow {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
 }
 
 // ---------- стили для кнопки слайдера "назад" ----------

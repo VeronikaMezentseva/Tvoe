@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 52px 64px 80px 64px;
-  width: 75%;
   gap: 44px;
 }
 
@@ -44,10 +43,6 @@
   line-height: 20.48px;
 }
 
-.navigation-list > li:last-child {
-  margin-left: 54px;
-}
-
 .navigation-tech-list {
   display: flex;
   gap: 20px;
@@ -57,9 +52,13 @@
   line-height: 20.48px;
 }
 
+.navigation-tech-list > li:first-child {
+  display: none;
+}
+
 .company-info-block {
+  position: relative;
   display: flex;
-  gap: 300px;
 }
 
 .age-rate-label {
@@ -87,5 +86,92 @@
 }
 
 .logo {
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  position: absolute;
   opacity: .3;
+}
+
+@media (width <= 1220px) {
+  .footer {
+    padding: 28px 16px 34px 16px;
+    gap: 28px;
+  }
+
+  .navigation-block {
+    flex-direction: column;
+    order: 1;
+    border: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .navigation-list {
+    display: none;
+  }
+
+  .navigation-tech-list {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .navigation-tech-list > li:first-child {
+    display: inline;
+  }
+
+  .company-info-block {
+    order: 3;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .company-info-rights {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-inline: auto;
+    position: relative;
+    display: block;
+  }
+
+  .age-rate-label {
+    padding: 4px;
+    font-size: 14px;
+    line-height: 17.92px;
+  }
+
+  .buttons-container {
+    gap: 16.5px;
+    justify-content: center;
+    margin-bottom: 24.5px;
+  }
+
+  .social-links {
+    order: 2;
+    flex-direction: column-reverse;
+  }
+
+  .social-paragraph {
+    display: none;
+  }
+
+  .social-icon-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    mask-clip: content-box;
+  }
+
+  .social-icon {
+    position: relative;
+    z-index: 3;
+    padding: 10px;
+    filter: brightness(0%);
+  }
+
 }

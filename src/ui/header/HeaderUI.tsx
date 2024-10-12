@@ -1,10 +1,9 @@
 "use client"
 
-import { Button } from "@/app/components/button/Buttons";
 import LogoIMG from "../../images/Logo.png";
 import downloadIcon from "../../images/download.png";
 import { ButtonIconUI } from "../button-icon/ButtonIcon";
-import { ButtonUI } from "../button/Button";
+import { Button } from "../button/Button";
 import searchImg from "../../images/search.png";
 import styles from "../header/header.module.scss";
 import Link from "next/link";
@@ -36,9 +35,9 @@ export const HeaderUI: FC = () => {
         </ul>
       </nav>
       <div className={styles["buttons-container"]}>
-        <ButtonIconUI text={"Установить"} accent={false} icon={"download"} />
-        <Button text="7 дней за 0 ₽" accent={true} />
-        <ButtonIconUI text={"Промокод"} accent={false} icon={"promo"} />
+        <ButtonIconUI text={"Установить"} accent={false} icon={"download"} extraClasses="button-hidden" />
+        <Button extraClasses="button-hidden" text="7 дней за 0 ₽" accent={true} />
+        <ButtonIconUI text={"Промокод"} accent={false} icon={"promo"} extraClasses="button-hidden" />
         <div className={styles['buttons-container__buttons-search']}>
           <img src={searchImg.src} alt="Иконка поиска" />
         </div>

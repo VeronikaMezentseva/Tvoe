@@ -6,6 +6,7 @@
   font-size: 16px;
   line-height: 20.48px;
   font-weight: 500;
+  align-items: stretch;
 }
 
 .button-primary {
@@ -23,8 +24,19 @@
   max-height: 20px;
 }
 
+.button-centered-text {
+  justify-content: center;
+  align-content: center;
+}
+
 @media (width <= 1420px) {
-  .button {
+  .button-hidden {
+    display: none;
+  }
+}
+
+@media (width > 1220px) {
+  .button-footer {
     display: none;
   }
 }

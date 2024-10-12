@@ -1,6 +1,8 @@
 .promo-section {
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   padding: 52px 0px 52px 52px;
   background-color: rgba(13, 13, 16, 1);
   border-radius: 20px;
@@ -46,4 +48,49 @@
   color: rgba(186, 186, 186, 1);
   font-size: 16px;
   line-height: 20.48px;
+}
+
+@media (width <= 1350px) {
+
+  .promo-section {
+    padding-bottom: 173px;
+  }
+}
+
+@media (width <= 1000px) {
+  .promo-section {
+    padding: 20px 20px 173px 20px;
+    margin-bottom: 32px;
+  }
+
+  .promo-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .paragraphs-block {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .promo-paragraph {
+    font-size: 16px;
+    line-height: 20.48px;
+  }
+  
+  .action-block {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .action-block__paragraph {
+    font-size: 12px;
+    line-height: 15.36px;
+    text-align: right;
+  }
 }

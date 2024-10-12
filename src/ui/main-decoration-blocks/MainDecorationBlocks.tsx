@@ -9,7 +9,7 @@ export const MainDecorationBlocks: FC = () => {
   return (
     <div className={styles["decorate"]}>
       <div className={styles["decorate-container"]}>
-        <div className={`${styles["row-block"]} ${styles["row-block-first"]}`}>
+        <div className={`${styles["row-block"]}`}>
           <img className={styles["image"]} src={eliteImage.src} alt="" />
           <img className={styles["image"]} src={doctorImage.src} alt="" />
           <img className={styles["image"]} src={emilyImage.src} alt="" />
@@ -23,7 +23,6 @@ export const MainDecorationBlocks: FC = () => {
           <img className={styles["image"]} src={eliteImage.src} alt="" />
           <img className={styles["image"]} src={doctorImage.src} alt="" />
           <img className={styles["image"]} src={sweetHomeImage.src} alt="" />
-          {/* <img className={styles["image"]} src={emilyImage.src} alt="" /> */}
         </div>
       </div>
     </div>
